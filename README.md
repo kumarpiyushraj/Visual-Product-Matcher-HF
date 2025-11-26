@@ -400,3 +400,6 @@ We welcome contributions from the community! Here's how you can help:
 </div>
 
 ---
+<p align="center">
+  <sub>© 2025 Kumar Piyush Raj. All rights reserved.</sub>
+</p>
