@@ -90,13 +90,13 @@ This project demonstrates the power of combining modern frontend technologies wi
 │                  GRADIO BACKEND                             │
 │         (Python + CLIP + SerpAPI)                           │
 │                                                             │
-│  ┌──────────────┐    ┌──────────────┐    ┌─────────────┐  │
-│  │ Store Search │    │  Web Search  │    │   Vector    │  │
-│  │   Endpoint   │    │   Endpoint   │    │  Database   │  │
-│  └──────────────┘    └──────────────┘    └─────────────┘  │
+│  ┌──────────────┐    ┌──────────────┐    ┌─────────────┐    │
+│  │ Store Search │    │  Web Search  │    │   Vector    │    │
+│  │   Endpoint   │    │   Endpoint   │    │  Database   │    │
+│  └──────────────┘    └──────────────┘    └─────────────┘    │
 └─────────────────────────────────────────────────────────────┘
-         │                      │
-         │                      │
+         │                     │
+         │                     │
     ┌────▼────┐          ┌─────▼──────┐
     │  CLIP   │          │  SerpAPI   │
     │  Model  │          │  (Google)  │
