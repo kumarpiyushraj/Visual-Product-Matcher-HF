@@ -17,9 +17,11 @@
 <br/>
 
 [![React](https://img.shields.io/badge/React-18.x-0f0829?style=for-the-badge&logo=react&logoColor=a78bfa&labelColor=0a0520&color=0f0829)](https://reactjs.org/)&nbsp;
-[![CLIP](https://img.shields.io/badge/AI%20Model-CLIP%20ViT--B%2F32-0f0829?style=for-the-badge&logo=openai&logoColor=c4b5fd&labelColor=0a0520&color=0f0829)](https://openai.com/research/clip)&nbsp;
-[![Gradio](https://img.shields.io/badge/Backend-Gradio%205.49-0f0829?style=for-the-badge&logo=python&logoColor=ddd6fe&labelColor=0a0520&color=0f0829)](https://www.gradio.app/)&nbsp;
+[![TypeScript](https://img.shields.io/badge/TypeScript-Strict-0f0829?style=for-the-badge&logo=typescript&logoColor=c4b5fd&labelColor=0a0520&color=0f0829)](https://www.typescriptlang.org/)&nbsp;
+[![CLIP](https://img.shields.io/badge/AI%20Model-CLIP%20ViT--B%2F32-0f0829?style=for-the-badge&logo=openai&logoColor=ddd6fe&labelColor=0a0520&color=0f0829)](https://huggingface.co/sentence-transformers/clip-ViT-B-32)&nbsp;
+[![Gradio](https://img.shields.io/badge/Backend-Gradio%205.49.1-0f0829?style=for-the-badge&logo=python&logoColor=c4b5fd&labelColor=0a0520&color=0f0829)](https://www.gradio.app/)&nbsp;
 [![Tailwind](https://img.shields.io/badge/Styling-Tailwind%20CSS-0f0829?style=for-the-badge&logo=tailwindcss&logoColor=a5f3fc&labelColor=0a0520&color=0f0829)](https://tailwindcss.com/)&nbsp;
+[![Framer](https://img.shields.io/badge/Animation-Framer%20Motion-0f0829?style=for-the-badge&logo=framer&logoColor=e879f9&labelColor=0a0520&color=0f0829)](https://www.framer.com/motion/)&nbsp;
 [![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97%20Spaces-Live-0f0829?style=for-the-badge&logoColor=fbbf24&labelColor=0a0520&color=0f0829)](https://huggingface.co/spaces/kumarpiyushraj/visual-product-matcher-frontend)
 
 <br/><br/>
@@ -34,7 +36,7 @@
 <!--  STATS STRIP                                                             -->
 <!----------------------------------------------------------------------------->
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a0520,100:160835&height=90&text=Dual%20Search%20Modes%20%C2%B7%20Sub-500ms%20Store%20Queries%20%C2%B7%20CLIP%20512D%20Embeddings%20%C2%B7%20Framer%20Motion%20UI&fontSize=14&fontColor=c4b5fd&fontAlignY=35&desc=React%20frontend%20%E2%80%94%20Gradio%20backend%20%E2%80%94%20deployed%20on%20Hugging%20Face%20Spaces%20with%20zero-config%20scaling&descSize=13&descColor=ede9fe&descAlignY=68" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a0520,100:160835&height=90&text=Dual%20Search%20Modes%20%C2%B7%20Sub-500ms%20Store%20Queries%20%C2%B7%20CLIP%20512D%20Embeddings%20%C2%B7%20Framer%20Motion%20UI&fontSize=14&fontColor=c4b5fd&fontAlignY=35&desc=React%20%2B%20TypeScript%20frontend%20%E2%80%94%20Gradio%205.49.1%20backend%20%E2%80%94%20deployed%20on%20Hugging%20Face%20Spaces&descSize=13&descColor=ede9fe&descAlignY=68" width="100%"/>
 
 <br/><br/>
 
@@ -46,9 +48,27 @@
 
 ### 📊 &nbsp;At a Glance
 
-| 🎨 Frontend | 🤖 AI Model | 📐 Embedding Dim | 🔍 Search Modes | ⚡ Query Speed | 📦 Max File |
+| 🎨 Frontend | 🤖 AI Model | 📐 Embedding Dim | 🔍 Search Modes | ⚡ Store Latency | 📦 Catalog |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| **React + Tailwind + Framer Motion** | **CLIP ViT-B/32** | **512D** | **Store + Web** | **< 500ms** | **10 MB** |
+| **React + TypeScript + Tailwind + Framer Motion** | **clip-ViT-B-32 (SentenceTransformers)** | **512D** | **Store + Web (SerpAPI)** | **100–500ms** | **50 Products** |
+
+</div>
+
+<br/><br/>
+
+<!----------------------------------------------------------------------------->
+<!--  LIVE LINKS                                                              -->
+<!----------------------------------------------------------------------------->
+
+<div align="center">
+
+### 🚀 &nbsp;Access the Application
+
+| Component | Purpose | Link |
+|:---:|:---|:---:|
+| **🎨 Frontend** | Interactive React UI — Upload, search, view results | [Launch Frontend](https://huggingface.co/spaces/kumarpiyushraj/visual-product-matcher-frontend) |
+| **⚙️ Backend** | Gradio API — CLIP inference, SerpAPI, vector search | [View Backend](https://huggingface.co/spaces/kumarpiyushraj/visual-product-matcher) |
+| **👤 HF Profile** | All spaces by kumarpiyushraj | [Visit Profile](https://huggingface.co/kumarpiyushraj) |
 
 </div>
 
@@ -86,9 +106,9 @@
 
 <br/>
 
-**VisualMatch AI** is a cutting-edge, production-ready **AI visual search platform** that transforms product discovery through semantic image understanding. By combining **CLIP-based embeddings** with a meticulously crafted **React UI**, it lets users upload any image and instantly surface visually similar products — no text queries, no filters, no friction.
+**VisualMatch AI** is a production-ready **AI-powered visual search platform** built in TypeScript (frontend) and Python (backend). Users upload any product image or paste a URL to get the top 10 visually similar matches from a curated 50-product catalog, powered by **CLIP ViT-B/32** semantic embeddings via `sentence-transformers`. A second mode offers **Google reverse image search** via SerpAPI for open-web discovery.
 
-This project showcases the full spectrum of modern web development: pixel-perfect component design, fluid animation systems, AI-powered backend logic, and seamless API integration — all deployed on Hugging Face Spaces for zero-config, globally distributed hosting.
+The frontend (`App.tsx`) is a fully typed React 18 SPA featuring animated blob backgrounds, glassmorphism panels, dual progress-bar tracking, a result sort system (`relevance`, `name_asc`, `name_desc`, `date_desc`), and an `AnimatePresence` modal — all driven by Framer Motion. The backend (`app.py`) is a queued Gradio 5.49.1 application exposing two named API endpoints consumed via the `@gradio/client` SDK.
 
 <br/>
 
@@ -96,11 +116,12 @@ This project showcases the full spectrum of modern web development: pixel-perfec
 
 | &nbsp; | What makes it different? | How it achieves it |
 |:---:|:---|:---|
-| 🎨 | **Production-Grade UI System** | Tailwind + Framer Motion form a fully animated, accessible design system with hover states, modals, and skeleton loaders |
-| 🧠 | **Semantic Visual Understanding** | CLIP ViT-B/32 encodes images into 512D embedding space — capturing meaning, not just pixels |
-| ⚡ | **Pre-Computed Vector Database** | Product embeddings precomputed at startup; cosine similarity at query time ensures sub-500ms results |
-| 🌐 | **Dual Search Architecture** | Store catalog mode for inventory matching, Web Exploration mode via SerpAPI for competitive research |
-| 🔌 | **API-First Design** | Gradio RESTful endpoints accept files, URLs, or base64 — integrate into any stack with 3 lines of code |
+| 🎨 | **Production-Grade Animated UI** | Framer Motion blob backgrounds, glassmorphism, staggered grid reveal, dual progress bars, spring `AnimatePresence` modals |
+| 🧠 | **Semantic Visual Understanding** | `SentenceTransformer("clip-ViT-B-32")` — 512D embeddings capture concept, not pixel distance |
+| ⚡ | **Pre-Computed Vector DB** | 50 product vectors in `product_vectors.json` loaded into a NumPy `(50, 512)` matrix at startup |
+| 🔀 | **Dual Search Modes** | Store Discovery (catalog cosine similarity) and Web Exploration (SerpAPI `google_reverse_image`) |
+| 🔌 | **@gradio/client SDK** | `client("kumarpiyushraj/visual-product-matcher").predict("/store_search", [...])` — no custom proxy layer |
+| 🗂️ | **Client-Side Sort** | `useMemo` re-sorts `normalizedResults` by `sortBy` state — zero extra network calls |
 
 </div>
 
@@ -115,70 +136,61 @@ This project showcases the full spectrum of modern web development: pixel-perfec
 
 <br/>
 
-The system is divided into two independently deployed layers — a **React SPA frontend** and a **Python Gradio backend** — communicating via JSON over HTTP. This separation allows each layer to scale, update, and be maintained without coupling.
-
 ```
 ┌────────────────────────────────────────────────────────────────────────────┐
-│                        LAYER 1 — REACT FRONTEND                            │
+│           LAYER 1 — REACT + TYPESCRIPT FRONTEND  (App.tsx)                 │
 │                                                                            │
-│   ┌──────────────┐   ┌──────────────┐   ┌──────────────┐   ┌───────────┐ │
-│   │  InputPanel  │   │  SearchMode  │   │  ResultGrid  │   │  Modal    │ │
-│   │  (Upload/URL)│   │  Toggle Tab  │   │  (10 Cards)  │   │  Overlay  │ │
-│   └──────┬───────┘   └──────┬───────┘   └──────┬───────┘   └─────┬─────┘ │
-│          │                  │                   │                 │        │
-│          └──────────────────┴───────────────────┴─────────────────┘        │
-│                                       │                                    │
-│                    React State / Context API                               │
-│                 Framer Motion · Tailwind CSS · Hot Toast                   │
+│  Background: indigo/violet/fuchsia animated blobs (CSS blob keyframes)    │
+│                                                                            │
+│  ┌─────────────┐  ┌──────────────────┐  ┌──────────────┐  ┌───────────┐  │
+│  │ Mode Toggle  │  │   InputPanel     │  │ ResultsGrid  │  │   Modal   │  │
+│  │ Store / Web  │  │ File + URL input │  │ Sorted Cards │  │ Crop UI   │  │
+│  │ layoutId tab │  │ validateImageUrl │  │ sortedResults│  │ AnimPres. │  │
+│  └──────┬───────┘  └──────┬───────────┘  └──────┬───────┘  └─────┬─────┘  │
+│         └─────────────────┴──────────────────────┴─────────────────┘       │
+│                                        │                                   │
+│   useState · useMemo · useRef · useEffect · AnimatePresence                │
+│   Framer Motion · Tailwind CSS (Inter font) · @gradio/client               │
 └────────────────────────────────────────┬───────────────────────────────────┘
                                          │
-                              POST /run/* (JSON + base64)
+                 gradioApp.predict("/store_search" | "/web_search")
+                         via @gradio/client SDK
                                          │
 ┌────────────────────────────────────────▼───────────────────────────────────┐
-│                        LAYER 2 — GRADIO BACKEND                            │
+│           LAYER 2 — GRADIO 5.49.1 BACKEND  (app.py)                       │
+│                          demo.queue().launch()                             │
 │                                                                            │
-│   ┌─────────────────────┐           ┌─────────────────────────────────┐   │
-│   │  /run/store_search  │           │      /run/web_search            │   │
-│   │  ─────────────────  │           │      ───────────────────────    │   │
-│   │  1. Decode input    │           │  1. Accept image URL            │   │
-│   │  2. PIL → RGB       │           │  2. Forward to SerpAPI          │   │
-│   │  3. CLIP encode     │           │  3. Return titles + thumbs      │   │
-│   │  4. Cosine sim      │           └──────────────┬──────────────────┘   │
-│   │  5. Top-10 rank     │                          │                       │
-│   └──────────┬──────────┘                    ┌─────▼──────┐               │
-│              │                               │  SerpAPI   │               │
-│   ┌──────────▼──────────┐                   │  (Google)  │               │
-│   │  Vector Database    │                   └────────────┘               │
-│   │  (In-Memory JSON)   │                                                 │
-│   │  512D embeddings    │                                                 │
-│   └──────────┬──────────┘                                                 │
-│              │                                                             │
-│   ┌──────────▼──────────┐                                                 │
-│   │  CLIP ViT-B/32      │                                                 │
-│   │  (CPU Inference)    │                                                 │
-│   └─────────────────────┘                                                 │
+│  ┌───────────────────────────────┐  ┌──────────────────────────────────┐  │
+│  │  api_name="store_search"      │  │  api_name="web_search"           │  │
+│  │  find_matches_in_store()      │  │  find_matches_on_web()           │  │
+│  │  ─────────────────────────    │  │  ──────────────────────────────  │  │
+│  │  _get_bytes_from_input()      │  │  search_serpapi(image_url, 10)   │  │
+│  │  PIL open → RGB               │  │  engine="google_reverse_image"   │  │
+│  │  thumbnail(320, 320)          │  │  timeout=10s                     │  │
+│  │  model.encode(img) → 512D     │  │  parse image_results[]           │  │
+│  │  cosine_similarity()          │  │  → title · link · thumbnail      │  │
+│  │  sort desc → top 10           │  └──────────────┬───────────────────┘  │
+│  └──────────────┬────────────────┘                  │                      │
+│                 │                              ┌─────▼──────┐              │
+│  ┌──────────────▼────────────────┐            │   SerpAPI  │              │
+│  │  NumPy matrix (50 x 512)      │            │  (Google)  │              │
+│  │  from product_vectors.json    │            └────────────┘              │
+│  │  loaded once at startup       │                                         │
+│  └──────────────┬────────────────┘                                         │
+│                 │                                                           │
+│  ┌──────────────▼────────────────┐                                         │
+│  │  clip-ViT-B-32                │                                         │
+│  │  SentenceTransformer (CPU)    │                                         │
+│  │  torch.set_num_threads(1)     │                                         │
+│  └───────────────────────────────┘                                         │
 └────────────────────────────────────────────────────────────────────────────┘
          │                                    │
-    ┌────▼──────────────────┐    ┌────────────▼────────────┐
-    │  Hugging Face Spaces  │    │   Hugging Face Spaces   │
-    │  (Frontend Hosting)   │    │   (Backend Hosting)     │
-    └───────────────────────┘    └─────────────────────────┘
+    ┌────▼───────────────────┐    ┌───────────▼─────────────┐
+    │  HF Spaces (static)    │    │  HF Spaces (Gradio SDK) │
+    │  sdk: static 1.0       │    │  sdk_version: 5.49.1    │
+    │  Frontend Space        │    │  app_file: app.py       │
+    └────────────────────────┘    └─────────────────────────┘
 ```
-
-<br/>
-
-### Separation of Concerns
-
-<div align="center">
-
-| Layer | Responsibility | Technology |
-|:---|:---|:---|
-| **Frontend** | UX, animations, routing, user input handling | React 18 · Tailwind · Framer Motion |
-| **Backend** | AI inference, embedding lookup, external API calls | Python · Gradio · CLIP · SerpAPI |
-| **Transport** | JSON over HTTP, base64 image encoding | Fetch API · REST |
-| **Hosting** | Zero-config deployment, iframe embeds, CDN | Hugging Face Spaces |
-
-</div>
 
 <br/><br/>
 
@@ -191,67 +203,72 @@ The system is divided into two independently deployed layers — a **React SPA f
 
 <br/>
 
-Store Discovery is the primary search mode, designed for **catalog-based visual matching**. Users upload or paste a product image; the backend computes a CLIP embedding and ranks the entire product vector database by **cosine similarity**, returning the top 10 matches with confidence scores.
+Store Discovery is the primary search mode. The user uploads a file or pastes an image URL. The frontend validates it client-side (MIME type, file size, pixel dimensions, URL reachability), then calls the Gradio backend via `@gradio/client`. The backend computes a 512D CLIP embedding and ranks all 50 preloaded product vectors by cosine similarity, returning the top 10 with scores.
 
 <br/>
 
-### 🔄 Store Search Flow
+### 🔄 Store Search — Full Frontend-to-Backend Flow
 
 ```
-User Uploads / Pastes Image URL
+User selects file or pastes URL
           │
           ▼
-┌─────────────────────────┐
-│  Client-Side Validation │   → Checks: format (JPG/PNG/WebP) · size (< 10MB) · URL reachability
-└─────────────┬───────────┘
-              │
-              ▼
-┌─────────────────────────┐
-│  Convert to Base64      │   → FileReader API or URL.createObjectURL → base64 string
-└─────────────┬───────────┘
-              │
-              ▼
-┌─────────────────────────┐
-│  POST /run/store_search │   → JSON body: {"data": [{"data": "<base64>"}, ""]}
-│  (Gradio endpoint)      │
-└─────────────┬───────────┘
-              │
-              ▼
-┌─────────────────────────┐
-│  Backend Processing     │   → PIL decode → RGB normalize → CLIP ViT-B/32 encode → 512D vector
-└─────────────┬───────────┘
-              │
-              ▼
-┌─────────────────────────┐
-│  Cosine Similarity Rank │   → Compare query vector against all precomputed product vectors
-└─────────────┬───────────┘
-              │
-              ▼
-┌─────────────────────────┐
-│  Return Top 10 Results  │   → id · name · image_url · similarity_score (0.0 – 1.0)
-└─────────────┬───────────┘
-              │
-              ▼
-┌─────────────────────────┐
-│  Frontend Renders Grid  │   → Framer Motion staggered card animation · score badges · hover modals
-└─────────────────────────┘
+┌─────────────────────────────────────────────────────────────────────────┐
+│  handleFileChange() / handleStoreUrlChange()                            │
+│  → MIME: image/jpeg · image/png · image/webp only                      │
+│  → Size: file.size > 10 * 1024 * 1024 → reject                        │
+│  → Dimensions: naturalWidth/Height > 4000 → reject                    │
+│  → URL: validateImageUrl() via new Image().onload / onerror            │
+│  → uploadProgress: 0 → 30 → 100  (animated h-3 progress bar)          │
+│  → setTimeout 1000ms → reset uploadProgress to 0                      │
+└──────────────────────────────┬──────────────────────────────────────────┘
+                               │
+                               ▼
+┌─────────────────────────────────────────────────────────────────────────┐
+│  handleSearch()                                                         │
+│  → setSearchProgress(20)                                               │
+│  → setInterval: +10 every 500ms, capped at 90                         │
+│  → const gradioApp = await client("kumarpiyushraj/visual-product-matcher")
+│  → grResult = await gradioApp.predict("/store_search", [file, storeUrl])│
+│  → clearInterval → setSearchProgress(100) → reset after 1000ms        │
+└──────────────────────────────┬──────────────────────────────────────────┘
+                               │
+                               ▼
+┌─────────────────────────────────────────────────────────────────────────┐
+│  find_matches_in_store(image_file, image_url) — app.py                 │
+│  → _get_bytes_from_input(): handles dict/str/file-like/.name/bytes     │
+│  → pil_open_from_bytes(): Image.open → .convert("RGB") → .thumbnail(320,320)
+│  → model.encode(img, convert_to_numpy=True).reshape(1, -1) → 512D     │
+│  → cosine_similarity(user_vector, vector_matrix)[0] → scores (50,)    │
+│  → sort by score desc → top 10 → return gr.JSON(value=results)        │
+└──────────────────────────────┬──────────────────────────────────────────┘
+                               │
+                               ▼
+┌─────────────────────────────────────────────────────────────────────────┐
+│  parseGradioResultByMode(grResult, "store")                             │
+│  → normalizeStoreItem(): extract product.name, imagePath, score        │
+│  → normalizeImageUrl(): window.location.origin + /images/ + filename   │
+│  → useMemo sortedResults: sort by sortBy state (relevance/name/date)   │
+│  → Framer Motion staggered grid: staggerChildren 0.05s, whileHover y:-8│
+└─────────────────────────────────────────────────────────────────────────┘
 ```
 
 <br/>
 
 <div align="center">
 
-| Parameter | Value |
-|:---|:---:|
-| **Model** | `clip-ViT-B-32` |
-| **Embedding Dimension** | **512** |
-| **Image Resize** | `320 × 320 px` |
-| **Colour Space** | RGB (PIL conversion) |
-| **Similarity Metric** | Cosine Similarity (scikit-learn) |
-| **Results Returned** | Top **10** ranked matches |
-| **Latency (CPU)** | **100–500 ms** per query |
-| **Max File Size** | **10 MB** |
-| **Accepted Formats** | JPG · PNG · WebP |
+| Parameter | Value | Source |
+|:---|:---:|:---:|
+| **Model** | `SentenceTransformer("clip-ViT-B-32", device="cpu")` | `app.py` |
+| **CPU Threading** | `torch.set_num_threads(1)` | `app.py` |
+| **Embedding Dimension** | **512** | `product_vectors.json` |
+| **Image Resize** | `img.thumbnail((320, 320))` | `pil_open_from_bytes()` |
+| **Colour Space** | `.convert("RGB")` | `pil_open_from_bytes()` |
+| **Similarity Metric** | `cosine_similarity` (scikit-learn) | `find_matches_in_store()` |
+| **Results Returned** | Top **10** | `[:10]` slice after sort |
+| **Max File Size** | **10 MB** | `handleFileChange()` |
+| **Max Dimensions** | **4000 × 4000 px** | `handleFileChange()` |
+| **Accepted Formats** | `image/jpeg` · `image/png` · `image/webp` | `handleFileChange()` accept attr |
 
 </div>
 
@@ -266,39 +283,52 @@ User Uploads / Pastes Image URL
 
 <br/>
 
-Web Exploration mode extends visual search **beyond the local catalog**, performing a **Google reverse image search** via SerpAPI. This is ideal for competitive research, market analysis, or discovering publicly available alternatives to a product.
+Web Exploration mode sends a direct image URL to the backend which forwards it to the **SerpAPI Google Reverse Image Search** engine (`engine: "google_reverse_image"`). Results include titles, source links, and thumbnails. In the frontend, web-mode cards show a `View ↗` fuchsia external link instead of a percentage match badge.
 
 <br/>
 
 ### 🔄 Web Search Flow
 
 ```
-User Provides Image URL
+User pastes direct image URL into Web Exploration input
           │
           ▼
-┌─────────────────────────┐
-│  POST /run/web_search   │   → JSON body: {"data": ["https://example.com/image.jpg"]}
-└─────────────┬───────────┘
-              │
-              ▼
-┌─────────────────────────┐
-│  SerpAPI Integration    │   → Calls Google Lens / reverse image search API
-└─────────────┬───────────┘
-              │
-              ▼
-┌─────────────────────────┐
-│  Parse Web Results      │   → Extracts: title · source link · thumbnail URL
-└─────────────┬───────────┘
-              │
-              ▼
-┌─────────────────────────┐
-│  Frontend Web Grid      │   → Different card layout: shows title + domain + thumbnail
-└─────────────────────────┘
+┌─────────────────────────────────────────────────────────────────────────┐
+│  handleWebUrlChange()                                                   │
+│  → validateImageUrl() → new Image() onload/onerror                     │
+│  → If valid: setPreview(url) — live preview rendered                   │
+│  → If invalid: setInputError("Invalid image URL. Please check...")     │
+└──────────────────────────────┬──────────────────────────────────────────┘
+                               │
+                               ▼
+┌─────────────────────────────────────────────────────────────────────────┐
+│  handleSearch()                                                         │
+│  → grResult = await gradioApp.predict("/web_search", [webUrl])         │
+└──────────────────────────────┬──────────────────────────────────────────┘
+                               │
+                               ▼
+┌─────────────────────────────────────────────────────────────────────────┐
+│  find_matches_on_web(image_url) — app.py                               │
+│  → search_serpapi(image_url, num_results=10)                           │
+│  → GET https://serpapi.com/search                                      │
+│     params: engine="google_reverse_image" · image_url · api_key · num=10
+│     timeout: 10s                                                       │
+│  → parse data["image_results"] → filter items with thumbnail          │
+│  → return: [{title, link, thumbnail}, ...]                             │
+└──────────────────────────────┬──────────────────────────────────────────┘
+                               │
+                               ▼
+┌─────────────────────────────────────────────────────────────────────────┐
+│  parseGradioResultByMode(grResult, "web")                               │
+│  → extracts first.results array                                        │
+│  → normalizeWebItem(): title · image (thumbnail) · link                │
+│  → Cards show: thumbnail + title + "View ↗" (fuchsia, target="_blank")│
+└─────────────────────────────────────────────────────────────────────────┘
 ```
 
 <br/>
 
-> 📌 **Note:** Web mode requires a direct image URL (ending in `.jpg` / `.png`). SerpAPI introduces **1–3s latency** due to external API round-trip. For private catalog use cases, Store Discovery mode is always preferred.
+> 📌 **Requirements:** `SERPAPI_KEY` must be set as an HF Space secret or `.env` variable. Web mode requires a URL that resolves directly to an image file. SerpAPI roundtrip is ~1–3s with a 10s hard timeout.
 
 <br/><br/>
 
@@ -315,15 +345,18 @@ User Provides Image URL
 
 <div align="center">
 
-| Category | Technology | Version | Purpose |
-|:---|:---|:---:|:---|
-| **Framework** | React.js | 18.x | Component-based UI with hooks, context, and state management |
-| **Styling** | Tailwind CSS | 3.x | Utility-first responsive design with custom violet theme tokens |
-| **Animations** | Framer Motion | 10.x | Micro-interactions, staggered card reveals, modal enter/exit |
-| **Image Handling** | HTML File API + Fetch | — | Client-side validation, URL fetching, base64 encoding |
-| **API Client** | Fetch API | — | POST requests to Gradio endpoints with JSON payloads |
-| **Notifications** | react-hot-toast | 2.x | Non-blocking toast feedback for upload/search events |
-| **Deployment** | Hugging Face Spaces | — | Static SPA hosting with iframe embed support and CDN |
+| Category | Technology | Details — verified from source files |
+|:---|:---|:---|
+| **Language** | TypeScript (strict) | `App.tsx` — types: `Product`, `RawResultItem`, `NormalizedResult` |
+| **Framework** | React 18 | Hooks: `useState`, `useMemo`, `useRef`, `useEffect` |
+| **Entry Point** | `main.jsx` | `createRoot(getElementById("root")).render(<App/>)` |
+| **Styling** | Tailwind CSS | `@import "tailwindcss"` in `input.css` · body gradient `#071029 → #0b1220` |
+| **Font** | Inter | `font-family: "Inter", ui-sans-serif, system-ui` — `input.css` |
+| **Animation** | Framer Motion | `motion`, `AnimatePresence`, `layoutId="activeMode"` for tab transitions |
+| **Backend Client** | `@gradio/client` | `client("kumarpiyushraj/visual-product-matcher").predict()` |
+| **Image Handling** | HTML File API | `FileReader`, `URL.createObjectURL`, `URL.revokeObjectURL` on cleanup |
+| **URL Validation** | Native `Image()` API | `new Image()` `.onload` / `.onerror` — no library dependency |
+| **Deployment** | HF Spaces (static SDK) | `sdk: static`, `sdk_version: '1.0'` |
 
 </div>
 
@@ -333,15 +366,20 @@ User Provides Image URL
 
 <div align="center">
 
-| Category | Technology | Version | Purpose |
-|:---|:---|:---:|:---|
-| **Framework** | Gradio | 5.49.1 | RESTful API serving, built-in request queuing, UI fallback |
-| **AI Model** | CLIP (clip-ViT-B-32) | — | Vision-language model — 512D semantic image embeddings |
-| **Image Processing** | Pillow (PIL) | — | Decode, resize, RGB convert, format normalization |
-| **Similarity Engine** | Scikit-learn + NumPy | — | Cosine similarity — vectorized across full product catalog |
-| **Web Search** | SerpAPI | — | Google Lens reverse image search via REST integration |
-| **Data Storage** | JSON (in-memory) | — | Product metadata and precomputed 512D embedding vectors |
-| **Runtime** | Python + PyTorch (CPU) | — | Tensor inference for CLIP encoder; dotenv secret management |
+| Category | Technology | Details — verified from `app.py` and `requirements.txt` |
+|:---|:---|:---|
+| **Framework** | Gradio 5.49.1 | `gr.Blocks` + `demo.queue().launch()` · two `api_name` endpoints |
+| **AI Model** | `clip-ViT-B-32` | `SentenceTransformer("clip-ViT-B-32", device="cpu")` |
+| **CPU Optimization** | PyTorch | `torch.set_num_threads(1)` — single-thread inference |
+| **Image Processing** | Pillow (PIL) | `.convert("RGB")` + `.thumbnail((320, 320))` |
+| **Similarity** | scikit-learn | `cosine_similarity(user_vector, vector_matrix)[0]` |
+| **Vector Matrix** | NumPy | Shape `(50, 512)` — built once at startup from JSON |
+| **Web Search** | SerpAPI + Requests | `engine="google_reverse_image"` · timeout=10 · filters by `thumbnail` |
+| **Data Files** | JSON | `products.json` (50 products) · `product_vectors.json` (50 × 512D) |
+| **Input Handler** | `_get_bytes_from_input()` | Handles: dict/base64, str path, `.read()`, `.name`, raw bytes |
+| **Secrets** | python-dotenv | `load_dotenv()` → `SERPAPI_KEY = os.getenv("SERPAPI_KEY")` |
+| **Preprocessing** | `index.py` | One-time: CLIP encodes `public/images/` → writes `product_vectors.json` |
+| **Deployment** | HF Spaces (Gradio SDK) | `sdk: gradio`, `sdk_version: 5.49.1`, `app_file: app.py` |
 
 </div>
 
@@ -356,143 +394,208 @@ User Provides Image URL
 
 <br/>
 
-The frontend is built around a composable component architecture. Every visual element is a discrete, reusable React component with its own motion variants, Tailwind utility classes, and ARIA attributes — designed to degrade gracefully and scale responsively.
+All components are co-located in `App.tsx`. The architecture is intentionally flat — no component sub-files — with clean TypeScript types, isolated state, and all animation variants defined inline as Framer Motion props.
 
 <br/>
 
-### 🖼️ InputPanel — Dual-Mode Image Ingestion
+### 🌀 Animated Blob Background
 
-The `InputPanel` handles two distinct user flows: **drag-and-drop file upload** and **URL paste input**. Both paths converge at base64 encoding before the API call.
+Three blurred circles behind all content create a layered ambient glow using `mix-blend-multiply` and a custom `blob` CSS keyframe:
+
+```tsx
+// From App.tsx lines 452–455
+<div className="absolute -top-40 -right-40 w-80 h-80 bg-indigo-600 rounded-full
+  mix-blend-multiply filter blur-3xl opacity-18 animate-blob"/>
+<div className="absolute -bottom-40 -left-40 w-80 h-80 bg-violet-600 rounded-full
+  mix-blend-multiply filter blur-3xl opacity-16 animate-blob animation-delay-2000"/>
+<div className="absolute top-40 left-40 w-80 h-80 bg-fuchsia-600 rounded-full
+  mix-blend-multiply filter blur-3xl opacity-14 animate-blob animation-delay-4000"/>
+```
+
+```css
+/* Defined inline at bottom of App.tsx */
+@keyframes blob {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33%       { transform: translate(30px, -50px) scale(1.1); }
+  66%       { transform: translate(-20px, 20px) scale(0.9); }
+}
+.animate-blob { animation: blob 7s infinite; }
+.animation-delay-2000 { animation-delay: 2s; }
+.animation-delay-4000 { animation-delay: 4s; }
+```
+
+<br/>
+
+### 🔘 Mode Toggle — `layoutId` Animated Tab Switcher
+
+`layoutId="activeMode"` lets Framer Motion animate the active background pill between tabs via a spring transition — no manual position calculation:
+
+```tsx
+// Store tab — blue-500 to indigo-600
+{searchMode === "store" && (
+  <motion.div layoutId="activeMode"
+    className="absolute inset-0 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-xl"
+    transition={{ type: "spring", damping: 20 }}/>
+)}
+// Web tab — indigo-500 to violet-600
+{searchMode === "web" && (
+  <motion.div layoutId="activeMode"
+    className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-violet-600 rounded-xl"
+    transition={{ type: "spring", damping: 20 }}/>
+)}
+```
+
+`switchMode()` resets all 11 state variables: `storeFile`, `storeUrl`, `webUrl`, `preview`, `results`, `error`, `inputError`, `selectedProduct`, `showModal`, `uploadProgress`, `searchProgress`, `sortBy`.
+
+<br/>
+
+### 📂 File Upload Zone
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
-│  InputPanel Component                                                   │
+│  motion.label (htmlFor="file-upload") — dashed border, hover glow      │
 │                                                                         │
-│  ┌─────────────────────────────┐  ┌──────────────────────────────────┐  │
-│  │   📁 FILE UPLOAD TAB        │  │   🔗 URL PASTE TAB               │  │
-│  │                             │  │                                  │  │
-│  │   Drag & Drop Zone          │  │   <input type="text" />          │  │
-│  │   ┌─────────────────────┐   │  │   Validates: ends in .jpg/.png  │  │
-│  │   │  Dashed border      │   │  │   Fetches image for preview      │  │
-│  │   │  hover: scale(1.02) │   │  │   Error: toast notification      │  │
-│  │   │  ondrop: FileReader │   │  │                                  │  │
-│  │   └─────────────────────┘   │  └──────────────────────────────────┘  │
-│  │   Accepts: jpg png webp     │                                         │
-│  │   Max size: 10MB            │                                         │
-│  └─────────────────────────────┘                                         │
+│  ┌───────────────────────────────────────────────────────────────────┐  │
+│  │  ✨ icon (whileHover: rotate 15°)                                  │  │
+│  │  Text: storeFile ? storeFile.name : "Drop your image here"         │  │
+│  │  Sub:  "JPG, PNG, WebP • Maximum 10MB"                            │  │
+│  │  Hover overlay: bg-gradient indigo/violet opacity 0 → 100%        │  │
+│  └───────────────────────────────────────────────────────────────────┘  │
 │                                                                         │
-│   → Shared preview: <img /> with object-fit:cover  ·  Remove button    │
-│   → Encode: FileReader.readAsDataURL() → strip prefix → pure base64     │
+│  Hidden <input type="file" id="file-upload"                            │
+│    accept="image/jpeg,image/png,image/webp"                            │
+│    onChange={handleFileChange} />                                       │
+│                                                                         │
+│  URL input: placeholder "Or paste an image URL..."  🔗                │
+│  Web input: placeholder "Enter image URL for web search..."  🌍        │
 └─────────────────────────────────────────────────────────────────────────┘
+```
+
+<br/>
+
+### ⏳ Dual Progress Bar System
+
+Two independent progress systems with distinct visual feedback:
+
+```tsx
+// Upload bar (h-3, indigo-500 to fuchsia-500) — triggered by handleFileChange
+//   0 → 30 (on file selected) → 100 (on Image.onload) → reset after 1000ms
+
+// Search bar (h-2, indigo-500 via violet-500 to fuchsia-500) — triggered by handleSearch
+//   20 (on search start) → +10 every 500ms capped at 90 → 100 (on response)
+//   Shows text: "AI analyzing visual patterns... {searchProgress}%"
+//   → reset after 1000ms timeout
+```
+
+<br/>
+
+### 🌀 `LoadingSpinner` — Multi-Layer Spinner
+
+Custom 4-layer spinner rendered while `isLoading === true`:
+
+```
+Layer 1 (outermost): blur-xl glow ring — animate-spin, opacity-75
+Layer 2:             solid gradient ring — animate-spin
+Layer 3:             white inner mask (inset-2) — backdrop-blur-sm
+Layer 4 (core):      gradient dot (inset-4) — animate-pulse
+Label: "Discovering Visual Matches..." (gradient text, fades in with delay 0.2s)
+```
+
+<br/>
+
+### 📋 `SkeletonLoader` — 10 Placeholder Cards
+
+Rendered with staggered entry (`delay: i * 0.05`) — exactly matches `ProductCard` dimensions to prevent layout shift:
+
+```tsx
+<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+  {[...Array(10)].map((_, i) => (
+    <motion.div key={i} initial={{opacity:0,y:20}} animate={{opacity:1,y:0}}
+      transition={{delay: i * 0.05}}>
+      <div className="bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl animate-pulse">
+        <div className="aspect-square bg-gradient-to-br from-gray-200 to-gray-300"/>
+        <div className="p-3 space-y-1">
+          <div className="h-3 bg-gray-300 rounded-full w-3/4"/>
+          <div className="h-2.5 bg-gray-300 rounded-full w-1/2"/>
+        </div>
+      </div>
+    </motion.div>
+  ))}
+</div>
 ```
 
 <br/>
 
 ### 🃏 ProductCard — Result Display Unit
 
-Each search result renders as a `ProductCard` with staggered Framer Motion entry and interactive hover state.
-
 ```
-┌──────────────────────────────────────────────────────────────────────────┐
-│  ProductCard Component (per search result)                               │
-│                                                                          │
-│  ┌─────────────────────────────────────────────────────────────────────┐ │
-│  │                       Product Image                                 │ │
-│  │                    aspect-ratio: 1 / 1                              │ │
-│  │                  object-fit: cover (no distortion)                  │ │
-│  │  ┌─────────────┐                                                    │ │
-│  │  │ Score Badge │   top-right: "92% match"                           │ │
-│  │  │ bg-violet   │   color-coded: green > 0.85 · yellow > 0.70        │ │
-│  │  └─────────────┘                                                    │ │
-│  └─────────────────────────────────────────────────────────────────────┘ │
-│                                                                          │
-│  Product Name        ← truncated to 2 lines, title on hover             │
-│  Similarity Score    ← progress bar visualization                       │
-│  [View Details]      ← opens DetailModal on click                       │
-│                                                                          │
-│  Motion: initial: {opacity:0, y:20}  →  animate: {opacity:1, y:0}       │
-│  Delay: staggerChildren 0.05s per card                                   │
-└──────────────────────────────────────────────────────────────────────────┘
+Responsive grid: grid-cols-1 sm:2 md:3 lg:4 xl:5 · gap-4
+Stagger:  variants { hidden:{y:30,opacity:0}, visible:{y:0,opacity:1} }
+          container staggerChildren: 0.05s
+Hover:    whileHover={{ y: -8, transition: { duration: 0.3 } }}
+
+Card internals:
+  ┌─────────────────────────────────────────────┐
+  │ aspect-square image                         │
+  │   object-cover · group-hover:scale-110      │
+  │   gradient overlay (from-black/60) on hover │
+  │   ↗ icon button (top-right, hover only)     │
+  ├─────────────────────────────────────────────┤
+  │ p-3 info area                               │
+  │   Product name (line-clamp-2, text-sm)      │
+  │   [Store] % Match badge — from-indigo-500   │
+  │            to-fuchsia-500 rounded-full      │
+  │   [Web]   "View ↗" — fuchsia-400 text      │
+  │            target="_blank" external link    │
+  └─────────────────────────────────────────────┘
+Clicking card (store mode): openProductModal(item.product)
 ```
 
 <br/>
 
-### 🪟 DetailModal — Full-Screen Product View
+### ↕️ Sort Controls
 
-Clicking any `ProductCard` opens a `DetailModal` overlaid on the full viewport using a Framer Motion `AnimatePresence` transition.
+When `results.length > 0`, a row appears with a match count pill and sort dropdown:
 
-```
-┌──────────────────────────────────────────────────────────────────────────┐
-│  DetailModal Component                                                   │
-│                                                                          │
-│  Backdrop: bg-black/60  ·  blur(4px)  ·  onClick: close                 │
-│                                                                          │
-│  ┌───────────────────────────┬────────────────────────────────────────┐  │
-│  │  Product Image (lg)       │  Product Name            [×] Close     │  │
-│  │  max-w: 480px             │  Product ID                            │  │
-│  │  rounded-2xl              │  ──────────────────────────────────    │  │
-│  │  shadow-2xl               │  Similarity Score     [████████░░] 82% │  │
-│  │                           │  ──────────────────────────────────    │  │
-│  │                           │  [🔍 Search Similar]  [🔗 Copy Link]  │  │
-│  │                           │                                        │  │
-│  └───────────────────────────┴────────────────────────────────────────┘  │
-│                                                                          │
-│  Motion: scale 0.92→1.0 · opacity 0→1 · spring(stiffness:300)           │
-└──────────────────────────────────────────────────────────────────────────┘
+```tsx
+<select value={sortBy} onChange={...} className="bg-gray-800/50 border border-white/30 ...">
+  <option value="relevance">Relevance</option>    // score × 100 desc (store) / original (web)
+  <option value="name_asc">Name A-Z</option>      // a.title.localeCompare(b.title)
+  <option value="name_desc">Name Z-A</option>     // b.title.localeCompare(a.title)
+  <option value="date_desc">Date (Newest)</option> // product.created_at || fallback to title
+</select>
+// select option background: #1f2937 (defined in inline style block)
 ```
 
 <br/>
 
-### ⏳ Skeleton Loader — Perceived Performance
+### 🪟 Detail Modal — Product Crop View
 
-While awaiting API response, result slots render animated `SkeletonCard` placeholders — matching the exact dimensions of `ProductCard` to prevent layout shift.
+Opens via `AnimatePresence` when a store result card is clicked:
 
-```javascript
-// Skeleton pulse animation — Tailwind
-<div className="animate-pulse">
-  <div className="bg-violet-900/30 rounded-2xl aspect-square w-full" />
-  <div className="h-4 bg-violet-900/30 rounded mt-3 w-3/4" />
-  <div className="h-3 bg-violet-900/20 rounded mt-2 w-1/2" />
-</div>
+```tsx
+// Backdrop: bg-black/80 backdrop-blur-md, onClick → closeProductModal
+// Panel:    from-slate-900 via-indigo-900 to-slate-900, border border-white/12
+//           initial: scale 0.9 opacity 0 → animate: scale 1 opacity 1
+//           exit:    scale 0.9 opacity 0
+//           transition: type "spring", damping 25
+// Close:    ✕ button — whileHover: { rotate: 90, scale: 1.1 }
+// Image:    w-full h-64 object-contain
+// Crop btn: "✂️ Crop Image" → handleCrop() [currently alert simulation]
+// Cancel:   closeProductModal()
 ```
 
 <br/>
 
-### 🔔 Toast Notification System
+### 🦶 Footer
 
-`react-hot-toast` is configured with a custom violet theme to match the design system:
+Three-column animated grid (`delay: 0.1 / 0.2 / 0.3`):
 
-```javascript
-toast.error("File exceeds 10MB limit", {
-  style: {
-    background: "#1e0a45",
-    color:      "#ddd6fe",
-    border:     "1px solid #4c1d95",
-  },
-  iconTheme: { primary: "#a78bfa", secondary: "#0d0720" }
-});
-```
+- **About** — "Next-generation visual search powered by cutting-edge AI technology. Discover products instantly with unmatched accuracy."
+- **Features** — ✓ AI-Powered Visual Recognition (indigo-400) · ✓ Real-time Web Search Integration (violet-400) · ✓ Enterprise-Ready Architecture (fuchsia-400)
+- **Connect** — Four emoji buttons: `🌟 🚀 💡 🎯` — `whileHover: { scale: 1.2, rotate: 15 }`
 
-<br/>
-
-### 📐 Responsive Layout Grid
-
-The `ResultGrid` adapts from a single-column mobile layout to a 5-column desktop layout using Tailwind responsive prefixes — no JavaScript breakpoint listeners required.
-
-```
-Mobile  (< 640px)   →  grid-cols-1   ·  1 card per row
-Tablet  (640–1023)  →  grid-cols-2   ·  2 cards per row
-Laptop  (1024–1279) →  grid-cols-3   ·  3 cards per row
-Desktop (≥ 1280px)  →  grid-cols-5   ·  5 cards per row (top 10 in 2 rows)
-```
-
-```jsx
-<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
-  {results.map((product, i) => (
-    <ProductCard key={product.id} product={product} delay={i * 0.05} />
-  ))}
-</div>
-```
+Tagline: `© 2025 Visual Product Matcher • Powered by Advanced AI` · `Secure • Private • Lightning Fast`
 
 <br/><br/>
 
@@ -505,80 +608,105 @@ Desktop (≥ 1280px)  →  grid-cols-5   ·  5 cards per row (top 10 in 2 rows)
 
 <br/>
 
-### 🔄 Complete Frontend Data Flow
+### 🔷 TypeScript Type System
 
-```mermaid
-graph LR
-    A[User Action] --> B[InputPanel Validation]
-    B --> C[Base64 Encoding]
-    C --> D[POST to Backend]
-    D --> E[Skeleton Loader]
-    E --> F[API Response]
-    F --> G[Staggered Card Reveal]
-    G --> H[Interactive Grid]
-    H --> I[Modal on Click]
+```typescript
+// All types defined in App.tsx
+type Product = {
+  id?: number;
+  name?: string;
+  imagePath?: string;
+  title?: string;
+  image?: string;
+  [k: string]: any;           // allows extra backend fields
+};
+
+type RawResultItem = {
+  product?: Product;
+  score?: number;             // 0.0–1.0, present in store mode
+  title?: string;
+  thumbnail?: string;         // present in web mode
+  link?: string;
+  [k: string]: any;
+};
+
+type NormalizedResult = {
+  title: string;
+  image: string;              // always absolute URL after normalizeImageUrl()
+  link?: string;
+  score?: number;
+  product?: Product;
+};
 ```
 
 <br/>
 
-### 🎞️ Animation System — Framer Motion Variants
+### 🔗 Image URL Normalization — `normalizeImageUrl()`
 
-All animations are defined as **variant objects** and applied declaratively, keeping component JSX clean and animation logic centralized:
+Handles all cases: bare filename from `products.json`, root-relative path, full URL, or blob URL from upload:
 
-```javascript
-// variants.js — shared animation definitions
-export const cardVariants = {
-  hidden:  { opacity: 0, y: 24, scale: 0.97 },
-  visible: { opacity: 1, y: 0,  scale: 1,
-    transition: { type: "spring", stiffness: 280, damping: 22 }
+```typescript
+function normalizeImageUrl(src?: string | null): string {
+  if (!src) return "/fallback.png";
+  if (src.startsWith("http") || src.startsWith("blob:")) return src;
+  if (src.startsWith("/")) src = src.slice(1);
+  return `${window.location.origin}/images/${src}`;
+  // e.g. "product-1.jpg" → "https://<space>/images/product-1.jpg"
+}
+```
+
+<br/>
+
+### 🔬 `parseGradioResultByMode()` — Response Normalization
+
+Handles multiple Gradio response shapes from `@gradio/client`:
+
+```typescript
+function parseGradioResultByMode(grResult: any, mode: "store" | "web"): any[] {
+  if (!grResult) return [];
+  if (Array.isArray(grResult)) return grResult;
+  if (grResult.type === "data" && Array.isArray(grResult.data)) {
+    const first = grResult.data[0];
+    if (mode === "store" && first?.value) return first.value;
+    if (mode === "web" && Array.isArray(first?.results)) return first.results;
   }
-};
-
-export const containerVariants = {
-  hidden:  {},
-  visible: { transition: { staggerChildren: 0.05, delayChildren: 0.1 } }
-};
-
-export const modalVariants = {
-  hidden:  { opacity: 0, scale: 0.92 },
-  visible: { opacity: 1, scale: 1,
-    transition: { type: "spring", stiffness: 300, damping: 26 }
-  },
-  exit:    { opacity: 0, scale: 0.95, transition: { duration: 0.15 } }
-};
+  return [grResult];
+}
 ```
 
 <br/>
 
-### ♿ Accessibility Layer
+### 🧹 Memory Management
 
-The component system includes comprehensive accessibility attributes:
+`useEffect` cleanup revokes blob URLs when `preview` changes — prevents memory leaks from `URL.createObjectURL(file)`:
 
-<div align="center">
+```typescript
+useEffect(() => {
+  return () => {
+    if (preview?.startsWith("blob:")) URL.revokeObjectURL(preview);
+  };
+}, [preview]);
+```
 
-| Feature | Implementation |
-|:---|:---|
-| **Keyboard Navigation** | All interactive elements are `Tab`-focusable; modal traps focus |
-| **Screen Readers** | `aria-label` on icon-only buttons; `role="dialog"` on modal |
-| **Reduced Motion** | `@media (prefers-reduced-motion)` disables Framer Motion transitions |
-| **High Contrast** | Violet palette maintains WCAG AA contrast ratios |
-| **Image Alt Text** | All `<img>` tags receive descriptive `alt` from product metadata |
-
-</div>
+`clearPreview()` also calls `URL.revokeObjectURL(preview)` directly for immediate cleanup on user dismiss.
 
 <br/>
 
 ### ⏱️ Frontend Runtime Breakdown
 
 ```
-Input validation            ~5ms     (synchronous — file size + format check)
-Base64 encoding            ~15ms     (FileReader async — scales with file size)
-Network request            variable  (depends on backend; skeleton shown immediately)
-JSON parse + state update   ~3ms     (results array → React state)
-Initial card renders       ~20ms     (10 ProductCard instances, no layout recalc)
-Stagger animation          500ms     (10 cards × 50ms delay → all visible)
-─────────────────────────────────────────────────────────────
-Total perceived wait:      < 600ms + backend latency
+MIME + size validation          ~1ms    synchronous
+Dimension check (Image.onload)  ~5ms    async, non-blocking
+URL reachability check          ~50ms   network dependent
+@gradio/client handshake        ~200ms  WebSocket setup (first call)
+gradioApp.predict() roundtrip   100–500ms (store) / 1–3s (web)
+parseGradioResultByMode         ~1ms
+normalizeStoreItem × 10         ~2ms
+useMemo sortedResults           ~1ms
+DOM render 10 cards             ~15ms
+Stagger animation complete      500ms   10 × 50ms delay
+──────────────────────────────────────────────────────────────
+Perceived first result visible: < 800ms + backend latency
 ```
 
 <br/><br/>
@@ -592,83 +720,157 @@ Total perceived wait:      < 600ms + backend latency
 
 <br/>
 
-### 🚀 Initialization — One-Time Startup Cost
+### 🚀 Startup Sequence
 
-At server start, the backend performs **all expensive operations once** so query-time latency is minimal:
+All expensive operations execute **once at boot** — every subsequent query hits in-memory structures only:
 
 ```python
-# app.py — startup sequence (runs once on Space launch)
+# app.py — executed at module load
+torch.set_num_threads(1)
+model = SentenceTransformer("clip-ViT-B-32", device="cpu")   # ~3–8s on first load
 
-# 1. Load CLIP model and processor
-model, preprocess = clip.load("ViT-B/32", device="cpu")
-model.eval()
+with open("products.json", "r", encoding="utf-8") as f:
+    products_data = json.load(f)       # 50 dicts: id, name, category, imagePath
 
-# 2. Load product catalog from JSON
-with open("products.json") as f:
-    catalog = json.load(f)
+with open("product_vectors.json", "r", encoding="utf-8") as f:
+    product_vectors_data = json.load(f)  # 50 × {id, vector[512]}
 
-# 3. Precompute all product embeddings → stored in-memory
-product_vectors = []
-for product in catalog:
-    img = Image.open(product["image_path"]).convert("RGB")
-    tensor = preprocess(img).unsqueeze(0)
-    with torch.no_grad():
-        vec = model.encode_image(tensor).cpu().numpy()[0]
-    product_vectors.append(vec / np.linalg.norm(vec))  # L2 normalize
-
-product_vectors = np.array(product_vectors)   # shape: (N, 512)
+product_vectors = {int(item["id"]): np.array(item["vector"], dtype=float)
+                   for item in product_vectors_data}
+product_ids    = list(product_vectors.keys())
+vector_matrix  = np.array([product_vectors[pid] for pid in product_ids])
+# vector_matrix.shape == (50, 512)
 ```
 
 <br/>
 
-### 🧠 Query-Time Inference
+### 🔐 `_get_bytes_from_input()` — 5-Stage Input Handler
 
 ```python
-def store_search(image_input, url_input):
-    # ── Step 1: Decode Input ──────────────────────────────────────────
-    if image_input and image_input.get("data"):
-        img_bytes = base64.b64decode(image_input["data"])
-        img = Image.open(io.BytesIO(img_bytes)).convert("RGB")
-    elif url_input:
-        response = requests.get(url_input, timeout=5)
-        img = Image.open(io.BytesIO(response.content)).convert("RGB")
-
-    # ── Step 2: Resize + Preprocess ──────────────────────────────────
-    img = img.resize((320, 320), Image.LANCZOS)
-    tensor = preprocess(img).unsqueeze(0)
-
-    # ── Step 3: CLIP Embedding ────────────────────────────────────────
-    with torch.no_grad():
-        query_vec = model.encode_image(tensor).cpu().numpy()[0]
-    query_vec = query_vec / np.linalg.norm(query_vec)   # L2 normalize
-
-    # ── Step 4: Cosine Similarity + Ranking ──────────────────────────
-    scores = cosine_similarity([query_vec], product_vectors)[0]
-    top_indices = np.argsort(scores)[::-1][:10]
-
-    # ── Step 5: Build Response ────────────────────────────────────────
-    return [
-        {**catalog[i], "similarity_score": float(scores[i])}
-        for i in top_indices
-    ]
+def _get_bytes_from_input(image_file):
+    if image_file is None: return None
+    # Stage 1: dict with "data" key → base64 payload (custom client)
+    if isinstance(image_file, dict) and "data" in image_file:
+        return base64.b64decode(image_file["data"])
+    # Stage 2: plain string → try filesystem path, then base64 decode
+    if isinstance(image_file, str):
+        if os.path.exists(image_file):
+            with open(image_file, "rb") as f: return f.read()
+        try: return base64.b64decode(image_file)
+        except: raise ValueError("Not a file path or base64 data.")
+    # Stage 3: file-like object with .read()
+    if hasattr(image_file, "read"):
+        content = image_file.read()
+        return content.encode("utf-8") if isinstance(content, str) else content
+    # Stage 4: object with .name attribute pointing to filesystem path
+    name = getattr(image_file, "name", None)
+    if isinstance(name, str) and os.path.exists(name):
+        with open(name, "rb") as f: return f.read()
+    # Stage 5: last resort — raw bytes()
+    try: return bytes(image_file)
+    except: raise ValueError(f"Unsupported type: {type(image_file)}")
 ```
 
 <br/>
+
+### 🧠 `find_matches_in_store()` — Core Inference
+
+```python
+def find_matches_in_store(image_file, image_url: str):
+    img_bytes = None
+    if image_file is not None:
+        img_bytes = _get_bytes_from_input(image_file)
+    elif image_url:
+        resp = requests.get(image_url, timeout=10,
+                            headers={"User-Agent": "Visual-Product-Matcher/1.0"})
+        resp.raise_for_status()
+        img_bytes = resp.content
+
+    img = pil_open_from_bytes(img_bytes)    # RGB + thumbnail(320, 320)
+    user_vector = model.encode(img, convert_to_numpy=True).reshape(1, -1)
+    similarities = cosine_similarity(user_vector, vector_matrix)[0]  # (50,)
+
+    results = sorted([
+        {
+          "product": next((p for p in products_data if int(p["id"]) == int(pid)), None),
+          "score":   float(similarities[i])
+        }
+        for i, pid in enumerate(product_ids)
+        if next((p for p in products_data if int(p["id"]) == int(pid)), None)
+    ], key=lambda x: x["score"], reverse=True)[:10]
+
+    return gr.JSON(value=results)
+```
+
+<br/>
+
+### 🗂️ Product Catalog — `products.json`
+
+50 products across 5 categories — all IDs sequential, all images follow `product-{id}.jpg` naming:
 
 <div align="center">
 
-| Processing Step | Runtime |
-|:---|:---:|
-| Input decode + PIL open | ~10–30ms |
-| Resize (320×320, LANCZOS) | ~5ms |
-| CLIP preprocessing (normalize + tensorize) | ~8ms |
-| CLIP encode_image (CPU, ViT-B/32) | ~70–400ms |
-| Cosine similarity (scikit-learn, vectorized) | ~2ms |
-| Sort + slice top 10 | ~1ms |
-| **Total store query** | **~100–500ms** |
-| **Web search (SerpAPI roundtrip)** | **~1–3s** |
+| Category | IDs | Count | Example Products |
+|:---|:---:|:---:|:---|
+| **Apparel** | 1–10 | 10 | Classic Denim Jacket · Black Leather Boots · Beige Trench Coat |
+| **Electronics** | 11–20 | 10 | Wireless Over-Ear Headphones · Smartwatch · Electric Drone |
+| **Furniture** | 21–30 | 10 | Minimalist Wooden Chair · Modern Gray Sofa · Velvet Armchair |
+| **Home Goods** | 31–40 | 10 | Ceramic Coffee Mug · Scented Soy Candle · Glass French Press |
+| **Accessories** | 41–50 | 10 | Brown Leather Wallet · Gold Wristwatch · Red Leather Handbag |
 
 </div>
+
+<br/>
+
+### ⚙️ `index.py` — Vector Generation Script
+
+One-time preprocessing — run before deploying to generate `product_vectors.json`:
+
+```python
+# index.py — run once: python index.py
+PRODUCTS_FILE_PATH = 'products.json'
+VECTORS_FILE_PATH  = 'product_vectors.json'
+IMAGES_DIR         = 'public/images'
+
+model = SentenceTransformer('clip-ViT-B-32')
+for product in products:
+    img    = Image.open(f"public/images/{os.path.basename(product['imagePath'])}")
+    vector = model.encode(img).tolist()           # 512 floats
+    product_vectors.append({'id': product['id'], 'vector': vector})
+
+json.dump(product_vectors, f, indent=2)           # writes product_vectors.json
+```
+
+<br/>
+
+### 🏗️ Gradio App Structure
+
+```python
+with gr.Blocks() as demo:
+    gr.Markdown("# Visual Product Matcher API")
+    with gr.Tabs():
+        with gr.TabItem("Store Search"):
+            store_file_input = gr.File(label="Upload Image File")
+            store_url_input  = gr.Textbox(label="Or Enter Image URL")
+            store_output     = gr.JSON()
+            store_button     = gr.Button("Search Store")
+        with gr.TabItem("Web Search"):
+            web_url_input = gr.Textbox(label="Enter Image URL")
+            web_output    = gr.JSON()
+            web_button    = gr.Button("Search Web")
+
+    store_button.click(fn=find_matches_in_store,
+                       inputs=[store_file_input, store_url_input],
+                       outputs=store_output,
+                       api_name="store_search")   # POST /run/store_search
+
+    web_button.click(fn=find_matches_on_web,
+                     inputs=[web_url_input],
+                     outputs=web_output,
+                     api_name="web_search")       # POST /run/web_search
+
+demo.queue().launch()
+```
 
 <br/><br/>
 
@@ -685,12 +887,22 @@ def store_search(image_input, url_input):
 
 **Endpoint:** `POST /run/store_search`
 
-**Request:**
+**Request — file as base64:**
 ```json
 {
   "data": [
-    { "data": "<base64_encoded_image_or_direct_url>" },
+    { "data": "<base64_encoded_image_string>" },
     ""
+  ]
+}
+```
+
+**Request — image URL:**
+```json
+{
+  "data": [
+    null,
+    "https://example.com/product.jpg"
   ]
 }
 ```
@@ -700,18 +912,22 @@ def store_search(image_input, url_input):
 {
   "data": [
     {
-      "id":               "product_042",
-      "name":             "Slim-Fit Indigo Denim Jacket",
-      "image_url":        "/catalog/images/jacket_042.jpg",
-      "category":         "Outerwear",
-      "similarity_score": 0.9241
+      "product": {
+        "id": 1,
+        "name": "Classic Denim Jacket",
+        "category": "Apparel",
+        "imagePath": "product-1.jpg"
+      },
+      "score": 0.9241
     },
     {
-      "id":               "product_017",
-      "name":             "Relaxed Wash Denim Coat",
-      "image_url":        "/catalog/images/coat_017.jpg",
-      "category":         "Outerwear",
-      "similarity_score": 0.8873
+      "product": {
+        "id": 9,
+        "name": "Leather Biker Jacket",
+        "category": "Apparel",
+        "imagePath": "product-9.jpg"
+      },
+      "score": 0.8873
     }
   ]
 }
@@ -725,21 +941,21 @@ def store_search(image_input, url_input):
 
 **Request:**
 ```json
-{
-  "data": ["https://example.com/product-image.jpg"]
-}
+{ "data": ["https://example.com/product-image.jpg"] }
 ```
 
 **Response:**
 ```json
 {
-  "data": [
-    {
-      "title":     "Levi's 501 Original Fit Denim Jacket — Blue",
-      "link":      "https://store.example.com/products/levis-501-jacket",
-      "thumbnail": "https://cdn.example.com/thumbs/jacket_thumb.jpg"
-    }
-  ]
+  "data": [{
+    "results": [
+      {
+        "title":     "Similar Denim Jacket — Example Store",
+        "link":      "https://store.example.com/jacket",
+        "thumbnail": "https://cdn.example.com/thumbs/jacket.jpg"
+      }
+    ]
+  }]
 }
 ```
 
@@ -750,26 +966,26 @@ def store_search(image_input, url_input):
 ```python
 import requests, base64
 
-# ── Load and encode image ─────────────────────────────────────────────────
-with open("query_product.jpg", "rb") as f:
-    img_b64 = base64.b64encode(f.read()).decode("utf-8")
-
-# ── Call store search ─────────────────────────────────────────────────────
 BASE_URL = "https://kumarpiyushraj-visual-product-matcher.hf.space"
 
-response = requests.post(
-    f"{BASE_URL}/run/store_search",
-    json={"data": [{"data": img_b64}, ""]},
-    timeout=15
-)
+# Store search — file as base64
+with open("query.jpg", "rb") as f:
+    img_b64 = base64.b64encode(f.read()).decode("utf-8")
 
-results = response.json()["data"]
-print(f"Top match: {results[0]['name']} ({results[0]['similarity_score']:.2%} similarity)")
+resp = requests.post(f"{BASE_URL}/run/store_search",
+                     json={"data": [{"data": img_b64}, ""]}, timeout=15)
+top = resp.json()["data"][0]
+print(f"Top match: {top['product']['name']} — {top['score']:.2%} similarity")
+
+# Web search
+resp = requests.post(f"{BASE_URL}/run/web_search",
+                     json={"data": ["https://example.com/image.jpg"]}, timeout=15)
+web = resp.json()["data"][0]["results"]
 ```
 
 <br/>
 
-### 🌐 HTML Embed
+### 🌐 Embed as iframe
 
 ```html
 <iframe
@@ -788,7 +1004,7 @@ print(f"Top match: {results[0]['name']} ({results[0]['similarity_score']:.2%} si
 <!--  PERFORMANCE                                                             -->
 <!----------------------------------------------------------------------------->
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:280d5c,100:0e0428&height=64&text=%E2%9A%A1%20%20Performance%20%26%20Optimization&fontSize=22&fontColor=ddd6fe&fontAlignY=52&fontAlign=50" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:280d5c,100:0e0428&height=64&text=%E2%9A%A1%20%20Performance%20and%20Optimization&fontSize=22&fontColor=ddd6fe&fontAlignY=52&fontAlign=50" width="100%"/>
 
 <br/>
 
@@ -796,15 +1012,18 @@ print(f"Top match: {results[0]['name']} ({results[0]['similarity_score']:.2%} si
 
 | Metric | Value | Notes |
 |:---|:---:|:---|
-| **Store query latency (CPU)** | 100–500ms | CLIP encode dominates; scales with model size |
-| **Web search latency** | 1–3s | SerpAPI external roundtrip |
-| **Frontend validation** | < 5ms | Synchronous — blocks before network call |
-| **Base64 encoding** | 10–50ms | Scales with file size (~10ms per MB) |
-| **Stagger animation duration** | 500ms | 10 cards × 50ms — perceived as instant |
-| **Max catalog size (in-memory)** | ~50 products | Scale to millions via Pinecone integration |
-| **Max file upload** | 10 MB | Enforced client-side before API call |
-| **Throughput** | Queued | Gradio queues concurrent requests automatically |
-| **CLIP model accuracy** | Semantic | Outperforms pixel-level hashing for style/shape |
+| **Store query latency (CPU)** | 100–500ms | CLIP encode dominates; `torch.set_num_threads(1)` |
+| **Web search latency** | 1–3s | SerpAPI external roundtrip · 10s hard timeout |
+| **@gradio/client handshake** | ~200ms | First call only — WebSocket setup |
+| **NumPy cosine similarity** | ~2ms | 50 × 512 vectorized — negligible |
+| **Frontend validation** | < 5ms | Synchronous MIME + size check |
+| **URL reachability check** | ~50ms | `new Image()` onload — network dependent |
+| **Stagger animation** | 500ms | 10 cards × 50ms — perceived as instant |
+| **Upload progress reset** | 1000ms | `setTimeout(() => setUploadProgress(0), 1000)` |
+| **Search progress reset** | 1000ms | `setTimeout(() => setSearchProgress(0), 1000)` |
+| **Max catalog size** | 50 products | Scales to millions via Pinecone |
+| **Max file upload** | 10 MB | `handleFileChange()` client-side enforced |
+| **Max image dimensions** | 4000 × 4000 px | `handleFileChange()` `naturalWidth/Height` check |
 
 </div>
 
@@ -812,11 +1031,11 @@ print(f"Top match: {results[0]['name']} ({results[0]['similarity_score']:.2%} si
 
 ### ✅ Optimization Tips
 
-- Use **centered, well-lit product photos** for 20–30% better cosine similarity scores
-- For **web mode**, always ensure the URL resolves to a direct image (ending in `.jpg` / `.png`)
-- Consider **GPU acceleration** on Hugging Face Spaces for catalogs exceeding 100 products
-- Implement **result caching** (e.g., MD5-keyed Redis) for frequently queried hero images
-- Compress images to under **1MB before upload** — CLIP resize to 320×320 makes quality above that redundant
+- Use **centered, well-lit product images** — CLIP semantic matching improves 20–30% with quality inputs
+- For **web mode**, ensure the URL resolves directly to an image file — not an HTML page containing an image
+- `torch.set_num_threads(1)` is already set in `app.py` — optimal for HF Spaces CPU tier
+- The `product_vectors.json` NumPy matrix is built at startup — no per-query disk I/O
+- For catalogs beyond 50 products, consider **Pinecone** or **Weaviate** for approximate nearest neighbor search
 
 <br/><br/>
 
@@ -832,47 +1051,51 @@ print(f"Top match: {results[0]['name']} ({results[0]['similarity_score']:.2%} si
 ### 🖱️ Try the Live Demo
 
 1. Visit the **[Frontend Space](https://huggingface.co/spaces/kumarpiyushraj/visual-product-matcher-frontend)**
-2. Select **Store Discovery** or **Web Exploration** from the tab bar
-3. Drag-and-drop an image, click the upload zone, or paste a direct image URL
-4. Click **Search** and watch the results animate into the grid with similarity scores
-5. Click any result card to open the **Detail Modal** for a full-screen view
+2. Select **🏪 Store Search** or **🌍 Web Search** from the animated tab bar
+3. **Store mode** — click the `✨` drop zone or drag a file (JPG / PNG / WebP · max 10MB · max 4000×4000 px), or paste an image URL
+4. **Web mode** — paste a direct image URL into the input field
+5. Click **🔍 Discover Matches** and watch the progress bar fill as AI processes your image
+6. Browse the scored result grid — click any card (store mode) to open the detail modal
 
 <br/>
 
 ### 🧑‍💻 Run Locally
 
 ```bash
-# ── Clone both Spaces ──────────────────────────────────────────────────────
-git clone https://huggingface.co/spaces/kumarpiyushraj/visual-product-matcher-frontend
+# Clone both Spaces
 git clone https://huggingface.co/spaces/kumarpiyushraj/visual-product-matcher
+git clone https://huggingface.co/spaces/kumarpiyushraj/visual-product-matcher-frontend
 
-# ── Backend setup ──────────────────────────────────────────────────────────
+# ── Backend ────────────────────────────────────────────────────────────────
 cd visual-product-matcher
-pip install -r requirements.txt
-cp .env.example .env          # add your SERPAPI_KEY
+pip install gradio python-dotenv requests Pillow numpy scikit-learn sentence-transformers torch
+
+cp .env.example .env          # set SERPAPI_KEY=your_key_here
+python index.py               # one-time: encodes public/images/ → product_vectors.json
 python app.py                 # starts Gradio on localhost:7860
 
-# ── Frontend setup ─────────────────────────────────────────────────────────
+# ── Frontend ───────────────────────────────────────────────────────────────
 cd ../visual-product-matcher-frontend
 npm install
-# Update REACT_APP_BACKEND_URL in .env to http://localhost:7860
-npm start                     # starts React dev server on localhost:3000
+# In App.tsx, change: client("kumarpiyushraj/visual-product-matcher")
+#                  → client("http://localhost:7860")
+npm run dev                   # Vite dev server on localhost:5173
 ```
 
 <br/>
 
-### 🤝 Contribute
+### 📦 `requirements.txt`
 
-<div align="center">
-
-| Step | Action |
-|:---:|:---|
-| 1 | Visit the [Frontend](https://huggingface.co/spaces/kumarpiyushraj/visual-product-matcher-frontend) or [Backend](https://huggingface.co/spaces/kumarpiyushraj/visual-product-matcher) Space |
-| 2 | Click **"Duplicate Space"** to create your own fork |
-| 3 | Make and test your changes in the duplicated Space |
-| 4 | Open a pull request with a description of what changed and why |
-
-</div>
+```
+gradio
+python-dotenv
+requests
+Pillow
+numpy
+scikit-learn
+sentence-transformers
+torch
+```
 
 <br/><br/>
 
@@ -890,12 +1113,12 @@ npm start                     # starts React dev server on localhost:3000
 
 <br/>
 
-- [ ] **Dark / Light mode toggle** — persist preference via localStorage
-- [ ] **Advanced image cropper** — crop-before-search for more precise queries
-- [ ] **Similarity heatmap overlay** — highlight which image regions drove the match
-- [ ] **Drag-to-compare** — side-by-side comparison between query and result images
-- [ ] **Result filtering** — filter by category, score threshold, or price range
-- [ ] **PWA support** — offline capability and install-to-homescreen on mobile
+- [ ] **Real crop implementation** — `handleCrop()` currently only triggers `alert("Crop applied successfully! (Simulation)")` — replace with `react-image-crop` or Canvas API
+- [ ] **Dark / Light mode toggle** — persist via localStorage
+- [ ] **Similarity heatmap** — visualize which image regions contributed to the match score
+- [ ] **Drag-to-compare** — side-by-side query vs. result view
+- [ ] **Category filter** — the `category` field already exists in `products.json`, just needs a filter UI
+- [ ] **PWA support** — service worker for offline capability and install-to-homescreen
 
 <br/>
 </details>
@@ -905,12 +1128,12 @@ npm start                     # starts React dev server on localhost:3000
 
 <br/>
 
-- [ ] **Batch image upload** — search multiple product images in one request
-- [ ] **CLIP ViT-L/14 upgrade** — 768D embeddings for higher retrieval accuracy
-- [ ] **Text + image hybrid search** — combine a CLIP text query with visual input
-- [ ] **Pinecone / Weaviate integration** — vector database for million-scale catalogs
-- [ ] **Re-ranking layer** — secondary re-ranking with a fine-tuned product similarity model
-- [ ] **Feedback loop** — thumbs up/down per result to log relevance signals for future fine-tuning
+- [ ] **Batch image upload** — process multiple query images in one call
+- [ ] **CLIP ViT-L/14 upgrade** — 768D embeddings for higher accuracy
+- [ ] **Text + image hybrid search** — combine CLIP text embeddings with visual input
+- [ ] **Pinecone / Weaviate integration** — scale vector search beyond 50 products
+- [ ] **Re-ranking model** — secondary fine-tuned similarity model on top of CLIP
+- [ ] **Relevance feedback** — thumbs up/down per result to log signals for future fine-tuning
 
 <br/>
 </details>
@@ -920,12 +1143,12 @@ npm start                     # starts React dev server on localhost:3000
 
 <br/>
 
-- [ ] **GPU Space** — upgrade Hugging Face Space to A10G for sub-100ms CLIP inference
-- [ ] **Result caching** — Redis-backed MD5-keyed cache for repeated queries
-- [ ] **WebSocket streaming** — stream partial results as they are computed
-- [ ] **Video frame extraction** — input a product video, search by extracted keyframes
-- [ ] **gRPC endpoint** — lower-latency binary transport for high-throughput integrations
-- [ ] **OpenTelemetry tracing** — distributed traces across frontend → Gradio → CLIP → SerpAPI
+- [ ] **GPU Space** — upgrade to A10G for sub-100ms CLIP inference
+- [ ] **Result caching** — MD5-keyed cache for frequently queried images
+- [ ] **Richer catalog schema** — add `price`, `brand`, `url`, `created_at` to `products.json` (fixes `date_desc` sort)
+- [ ] **Live `index.py`** — add products and regenerate vectors without full redeploy
+- [ ] **OpenTelemetry tracing** — end-to-end traces: frontend → Gradio → CLIP → SerpAPI
+- [ ] **WebSocket streaming** — stream partial results as each similarity score is computed
 
 <br/>
 </details>
@@ -944,13 +1167,14 @@ npm start                     # starts React dev server on localhost:3000
 
 | &nbsp; | Acknowledgment |
 |:---:|:---|
-| 🤗 | **Hugging Face** — For Spaces infrastructure enabling zero-config deployment with iframe and embed support |
-| 🧠 | **OpenAI** — For the CLIP model architecture enabling language-free, semantically rich visual search |
-| 🔍 | **SerpAPI** — For reliable, structured Google reverse image search results via clean REST API |
-| ⚛️ | **React & Vercel Teams** — For the component model and tooling that makes building UIs like this possible |
-| 🎞️ | **Framer** — For Motion, an animation library that makes fluid UIs achievable without custom keyframe logic |
-| 🌊 | **Tailwind Labs** — For the utility-first CSS framework that dramatically reduces design-to-code friction |
-| 🌟 | **Open Source ML Community** — For the libraries, tools, and reproducible research that powers this project |
+| 🤗 | **Hugging Face** — Spaces infrastructure for both static frontend and Gradio SDK backend hosting |
+| 🧠 | **OpenAI** — CLIP architecture enabling zero-shot language-free visual semantic search |
+| 🤖 | **UKP Lab / Sentence Transformers** — `clip-ViT-B-32` wrapper used directly in `app.py` |
+| 🔍 | **SerpAPI** — Google Reverse Image Search API powering the Web Exploration mode |
+| ⚛️ | **React Core Team** — Component model and hooks that structure the entire frontend |
+| 🎞️ | **Framer** — Motion library for all animations, `layoutId` tab switcher, and spring modals |
+| 🌊 | **Tailwind Labs** — Utility-first CSS enabling the glassmorphism, blob aesthetic, and responsive grid |
+| 🌟 | **Open Source ML Community** — NumPy, scikit-learn, Pillow, Gradio, and every supporting package |
 
 </div>
 
@@ -970,9 +1194,9 @@ npm start                     # starts React dev server on localhost:3000
 
 <br/>
 
-[![GitHub Issues](https://img.shields.io/badge/Issues-Report%20Bug-ef4444?style=for-the-badge&logo=github)](https://github.com/kumarpiyushraj/visual-product-matcher-hf/issues/new)&nbsp;
-[![HF Discussions](https://img.shields.io/badge/Discussions-Ask%20Question-7c3aed?style=for-the-badge&logo=huggingface)](https://huggingface.co/spaces/kumarpiyushraj/visual-product-matcher/discussions)&nbsp;
-[![Email](https://img.shields.io/badge/Email-Contact%20Developer-a78bfa?style=for-the-badge&logo=gmail)](mailto:kmpiyushraj@gmail.com)
+[![Backend Discussions](https://img.shields.io/badge/Backend%20Space-Discussions-7c3aed?style=for-the-badge&logo=huggingface)](https://huggingface.co/spaces/kumarpiyushraj/visual-product-matcher/discussions)&nbsp;
+[![Frontend Discussions](https://img.shields.io/badge/Frontend%20Space-Discussions-a78bfa?style=for-the-badge&logo=huggingface)](https://huggingface.co/spaces/kumarpiyushraj/visual-product-matcher-frontend/discussions)&nbsp;
+[![HF Profile](https://img.shields.io/badge/HF%20Profile-kumarpiyushraj-c4b5fd?style=for-the-badge&logo=huggingface)](https://huggingface.co/kumarpiyushraj)
 
 </div>
 
@@ -986,15 +1210,16 @@ npm start                     # starts React dev server on localhost:3000
 
 <br/>
 
-**Built with ❤️ for visual explorers &nbsp;·&nbsp; React &nbsp;·&nbsp; CLIP &nbsp;·&nbsp; Gradio &nbsp;·&nbsp; Framer Motion**
+**Built with ❤️ for visual explorers &nbsp;·&nbsp; React + TypeScript &nbsp;·&nbsp; CLIP ViT-B/32 &nbsp;·&nbsp; Gradio 5.49.1 &nbsp;·&nbsp; Framer Motion**
 
 <br/>
 
-[![Star this repo](https://img.shields.io/github/stars/kumarpiyushraj/visual-product-matcher-hf?style=for-the-badge&logo=github&color=7c3aed&labelColor=0d1117&label=Star%20this%20repo)](https://github.com/kumarpiyushraj/visual-product-matcher-hf/stargazers)
+[![Frontend Space](https://img.shields.io/badge/%F0%9F%8E%A8%20Frontend-Launch%20App-7c3aed?style=for-the-badge)](https://huggingface.co/spaces/kumarpiyushraj/visual-product-matcher-frontend)&nbsp;
+[![Backend Space](https://img.shields.io/badge/%E2%9A%99%EF%B8%8F%20Backend-View%20API-a78bfa?style=for-the-badge)](https://huggingface.co/spaces/kumarpiyushraj/visual-product-matcher)
 
 <br/>
 
-*© 2025 Kumar Piyush Raj &nbsp;·&nbsp; [GitHub @kumarpiyushraj](https://github.com/kumarpiyushraj)*
+*© 2025 Kumar Piyush Raj &nbsp;·&nbsp; [HF Profile @kumarpiyushraj](https://huggingface.co/kumarpiyushraj)*
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:a78bfa,40:7c3aed,70:1e0a45,100:0d0720&height=160&section=footer" width="100%"/>
 
